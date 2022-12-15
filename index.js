@@ -96,5 +96,9 @@ for (let i = 0; i < finances.length; i++) {
     
 }
 
+// total number of months included in the dataset.
 console.log(totalMonths);
+// net total amount of Profit/Losses over the entire period
 console.log(totalAmount);
+// average of the changes in Profit/Losses over the entire period
+console.log(totalAmount/totalMonths);
