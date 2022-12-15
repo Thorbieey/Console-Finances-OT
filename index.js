@@ -96,12 +96,16 @@ for (let i = 0; i < finances.length; i++) {
     
 }
 
+// Heading
+console.log("Financial Analysis");
+console.log("--------------------------------");
+
 // total number of months included in the dataset.
-console.log(totalMonths);
+console.log( "Total Months: " + totalMonths);
 // net total amount of Profit/Losses over the entire period
-console.log(totalAmount);
+console.log("Total: " + totalAmount);
 
 // average of the changes in Profit/Losses over the entire period
 let averageChange = totalAmount/totalMonths;
     // 
-console.log(averageChange.toFixed(2));
+console.log("Average  Change: " + averageChange.toFixed(2));
