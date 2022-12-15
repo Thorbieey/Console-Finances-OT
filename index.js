@@ -88,5 +88,13 @@ let finances = [
 ];
 
 let totalMonths = finances.length;
+let totalAmount = 0;
+
+for (let i = 0; i < finances.length; i++) {
+    const amount = finances[i][1];
+    totalAmount += amount;
+    
+}
 
 console.log(totalMonths);
+console.log(totalAmount);
