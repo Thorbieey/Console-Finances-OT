@@ -107,7 +107,12 @@ for (let i = 0; i < finances.length; i++) {
     }
 }
 
-console.log(changeProfLoss);
+for (let i = 0; i < changeProfLoss.length; i++) {
+    //  to calculate total of changes in profit/loss 
+    totalChange += changeProfLoss[i];
+}
+
+console.log(totalChange);
 
 // Heading
 console.log("Financial Analysis");
