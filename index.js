@@ -91,19 +91,22 @@ let finances = [
 let totalMonths = finances.length; // total number of months in finances array
 let totalAmount = 0; // net total amount of profit/loss in finances dataset/array
 let changeProfLoss = []; // array of changes in profits/loss from month to month
+let totalChange = 0; // total change in profit/loss over period in finances array
 
 for (let i = 0; i < finances.length; i++) {
     // to calculate the net total amount of profit and loss
     const amount = finances[i][1];
     totalAmount += amount;
     if(i == 0){
-        // to calculate change in profits for the first month
-        changeProfLoss.push(finances[i][1]); // assuming the previous month not stated = 0
+        // to calculate change in profit for the first month
+        changeProfLoss.push(finances[i][1]); // assuming the previous month profit, which is not stated = 0
     }
     else{
+        // to calculate change in profits for other months in the finances array
         changeProfLoss.push(finances[i][1] - finances[i-1][1]);
     }
 }
+
 console.log(changeProfLoss);
 
 // Heading
