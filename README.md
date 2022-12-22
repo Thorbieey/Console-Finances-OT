@@ -60,5 +60,5 @@ SO THAT i can easily view and access data concerning our financial performance o
 
 ## License
 
-Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license# Unit 4 Challenge: Console Finances
+Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license
 
