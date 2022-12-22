@@ -125,4 +125,6 @@ console.log( "Total Months: " + totalMonths);
 // net total amount of Profit/Losses over the entire period in finances dataset/array
 console.log("Total: " + totalAmount);
 // average of the changes in profit/losses over period in finances dataset/array
-console.log("Average  Change: " + averageChange.toFixed(2));
+console.log("Average  Change: " + averageChange.toFixed(2)); // approximate value of averageChage to 2 decimal places
+console.log("Greatest Increase in Profits: ")
+console.log("Greatest Decrease in Profits: ")
