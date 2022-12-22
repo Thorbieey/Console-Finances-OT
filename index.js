@@ -1,3 +1,4 @@
+// Data set array: Date, Profit/Loss
 let finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
@@ -87,14 +88,19 @@ let finances = [
 ['Feb-2017', 671099]
 ];
 
-let totalMonths = finances.length;
-let totalAmount = 0;
-let changeProfLoss = [];
+let totalMonths = finances.length; // total number of months in finances array
+let totalAmount = 0; // net total amount of profit/loss in finances dataset/array
+let changeProfLoss = []; // array of changes in profits/loss from month to month
 
 for (let i = 0; i < finances.length; i++) {
+    // to calculate the net total amount of profit and loss
     const amount = finances[i][1];
     totalAmount += amount;
-   
+    if(i == 0){
+        // to calculate change in profits for the first month
+        changeProfLoss.push(finances[i][1] - 0);
+        console.log(changeProfLoss);
+    }
 }
 
 // Heading
