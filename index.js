@@ -112,7 +112,6 @@ for (let i = 0; i < changeProfLoss.length; i++) {
     totalChange += changeProfLoss[i];
 }
 
-console.log(changeProfLoss);
 let averageChange = totalChange/totalMonths; // average of the changes in Profit/Losses over the entire period
 let greatestIncrease = Math.max(...changeProfLoss) // greatest increase in terms of profits
 let greatestDecrease = Math.min(...changeProfLoss) // greatest decrease in terms of losses
@@ -120,7 +119,6 @@ let greatestIncreaseIndex = changeProfLoss.indexOf(greatestIncrease); // returns
 let greatestDecreaseIndex = changeProfLoss.indexOf(greatestDecrease); // returns index at which the greatest decrease in losses occurs
 let greatestIncreaseMonth = finances[greatestIncreaseIndex][0]; // returns month equivalent to the greatest increase in profits
 let greatestDecreaseMonth = finances[greatestDecreaseIndex][0]; // returns month equivalent to the greatest decrease in losses
-console.log(greatestDecreaseMonth);
 
 // Print to Console
 // Heading
@@ -130,10 +128,10 @@ console.log("-----------------");
 // total number of months included in the finances dataset.
 console.log( "Total Months: " + totalMonths);
 // net total amount of Profit/Losses over the entire period in finances dataset/array
-console.log("Total: " + totalAmount);
+console.log("Total: " + "$" + totalAmount);
 // average of the changes in profit/losses over period in finances dataset/array
 console.log("Average  Change: " + averageChange.toFixed(2)); // approximate value of averageChage to 2 decimal places
 // date/amount of greatest increase in profits
-console.log("Greatest Increase in Profits: " + greatestIncreaseMonth + " " + "(" + greatestIncrease + ")")
+console.log("Greatest Increase in Profits: " + greatestIncreaseMonth + " " + "(" + "$" + greatestIncrease + ")")
 // date/amount of greatest loss over entire period
-console.log("Greatest Decrease in Profits: " + greatestDecreaseMonth + " " + "(" + greatestDecrease + ")")
+console.log("Greatest Decrease in Profits: " + greatestDecreaseMonth + " " + "(" + "$" + greatestDecrease + ")")
