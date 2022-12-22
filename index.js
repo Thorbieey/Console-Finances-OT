@@ -112,18 +112,17 @@ for (let i = 0; i < changeProfLoss.length; i++) {
     totalChange += changeProfLoss[i];
 }
 
-console.log(totalChange);
+let averageChange = totalChange/totalMonths; // average of the changes in Profit/Losses over the entire period
 
+
+// Print to Console
 // Heading
 console.log("Financial Analysis");
-console.log("--------------------------------");
+console.log("-----------------");
 
-// total number of months included in the dataset.
+// total number of months included in the finances dataset.
 console.log( "Total Months: " + totalMonths);
-// net total amount of Profit/Losses over the entire period
+// net total amount of Profit/Losses over the entire period in finances dataset/array
 console.log("Total: " + totalAmount);
-
-// average of the changes in Profit/Losses over the entire period
-let averageChange = totalAmount/totalMonths;
-    // 
+// average of the changes in profit/losses over period in finances dataset/array
 console.log("Average  Change: " + averageChange.toFixed(2));
