@@ -89,11 +89,12 @@ let finances = [
 
 let totalMonths = finances.length;
 let totalAmount = 0;
+let totalChangeAmount = 0;
 
 for (let i = 0; i < finances.length; i++) {
     const amount = finances[i][1];
     totalAmount += amount;
-    
+   
 }
 
 // Heading
