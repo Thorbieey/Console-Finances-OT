@@ -117,8 +117,10 @@ let averageChange = totalChange/totalMonths; // average of the changes in Profit
 let greatestIncrease = Math.max(...changeProfLoss) // greatest increase in terms of profits
 let greatestDecrease = Math.min(...changeProfLoss) // greatest decrease in terms of losses
 let greatestIncreaseIndex = changeProfLoss.indexOf(greatestIncrease); // returns index at which the greatest increase in profits occurs
+let greatestDecreaseIndex = changeProfLoss.indexOf(greatestDecrease); // returns index at which the greatest decrease in losses occurs
 let greatestIncreaseMonth = finances[greatestIncreaseIndex][0]; // returns month equivalent to the greatest increase in profits
-console.log(greatestIncreaseMonth);
+let greatestDecreaseMonth = finances[greatestDecreaseIndex][0]; // returns month equivalent to the greatest decrease in losses
+console.log(greatestDecreaseMonth);
 
 // Print to Console
 // Heading
@@ -134,4 +136,4 @@ console.log("Average  Change: " + averageChange.toFixed(2)); // approximate valu
 // date/amount of greatest increase in profits
 console.log("Greatest Increase in Profits: " + greatestIncreaseMonth + " " + "(" + greatestIncrease + ")")
 // date/amount of greatest loss over entire period
-console.log("Greatest Decrease in Profits: " + "(" + greatestDecrease + ")")
+console.log("Greatest Decrease in Profits: " + greatestDecreaseMonth + " " + "(" + greatestDecrease + ")")
