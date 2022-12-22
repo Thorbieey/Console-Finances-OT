@@ -114,8 +114,10 @@ for (let i = 0; i < changeProfLoss.length; i++) {
 
 console.log(changeProfLoss);
 let averageChange = totalChange/totalMonths; // average of the changes in Profit/Losses over the entire period
-let greatestIncrease = Math.max(...changeProfLoss)
-let greatestDecrease = Math.min(...changeProfLoss)
+let greatestIncrease = Math.max(...changeProfLoss) // greatest increase in terms of profits
+let greatestDecrease = Math.min(...changeProfLoss) // greatest decrease in terms of losses
+let greatestIncreaseIndex = changeProfLoss.indexOf(greatestIncrease); //
+console.log(greatestIncreaseIndex);
 
 // Print to Console
 // Heading
