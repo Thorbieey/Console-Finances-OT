@@ -98,10 +98,13 @@ for (let i = 0; i < finances.length; i++) {
     totalAmount += amount;
     if(i == 0){
         // to calculate change in profits for the first month
-        changeProfLoss.push(finances[i][1] - 0);
-        console.log(changeProfLoss);
+        changeProfLoss.push(finances[i][1]); // assuming the previous month not stated = 0
+    }
+    else{
+        changeProfLoss.push(finances[i][1] - finances[i-1][1]);
     }
 }
+console.log(changeProfLoss);
 
 // Heading
 console.log("Financial Analysis");
