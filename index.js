@@ -112,8 +112,10 @@ for (let i = 0; i < changeProfLoss.length; i++) {
     totalChange += changeProfLoss[i];
 }
 
+console.log(changeProfLoss);
 let averageChange = totalChange/totalMonths; // average of the changes in Profit/Losses over the entire period
-
+let greatestIncrease = Math.max(...changeProfLoss)
+let greatestDecrease = Math.min(...changeProfLoss)
 
 // Print to Console
 // Heading
@@ -126,5 +128,7 @@ console.log( "Total Months: " + totalMonths);
 console.log("Total: " + totalAmount);
 // average of the changes in profit/losses over period in finances dataset/array
 console.log("Average  Change: " + averageChange.toFixed(2)); // approximate value of averageChage to 2 decimal places
-console.log("Greatest Increase in Profits: ")
-console.log("Greatest Decrease in Profits: ")
+// date/amount of greatest increase in profits
+console.log("Greatest Increase in Profits: " + greatestIncrease)
+// date/amount of greatest loss over entire period
+console.log("Greatest Decrease in Profits: " + greatestDecrease)
