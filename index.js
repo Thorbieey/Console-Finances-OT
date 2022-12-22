@@ -1,5 +1,5 @@
-// Data set array: Date, Profit/Loss
 let finances = [
+    // Data set array: Date, Profit/Loss
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
@@ -121,17 +121,17 @@ let greatestIncreaseMonth = finances[greatestIncreaseIndex][0]; // returns month
 let greatestDecreaseMonth = finances[greatestDecreaseIndex][0]; // returns month equivalent to the greatest decrease in losses
 
 // Print to Console
-// Heading
+    // Heading
 console.log("Financial Analysis");
 console.log("-----------------");
 
-// total number of months included in the finances dataset.
+    // total number of months included in the finances dataset.
 console.log( "Total Months: " + totalMonths);
-// net total amount of Profit/Losses over the entire period in finances dataset/array
+    // net total amount of Profit/Losses over the entire period in finances dataset/array
 console.log("Total: " + "$" + totalAmount);
-// average of the changes in profit/losses over period in finances dataset/array
+    // average of the changes in profit/losses over period in finances dataset/array
 console.log("Average  Change: " + averageChange.toFixed(2)); // approximate value of averageChage to 2 decimal places
-// date/amount of greatest increase in profits
+    // date/amount of greatest increase in profits
 console.log("Greatest Increase in Profits: " + greatestIncreaseMonth + " " + "(" + "$" + greatestIncrease + ")")
-// date/amount of greatest loss over entire period
+    // date/amount of greatest loss over entire period
 console.log("Greatest Decrease in Profits: " + greatestDecreaseMonth + " " + "(" + "$" + greatestDecrease + ")")
