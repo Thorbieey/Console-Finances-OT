@@ -132,6 +132,6 @@ console.log("Total: " + totalAmount);
 // average of the changes in profit/losses over period in finances dataset/array
 console.log("Average  Change: " + averageChange.toFixed(2)); // approximate value of averageChage to 2 decimal places
 // date/amount of greatest increase in profits
-console.log("Greatest Increase in Profits: " + greatestIncrease)
+console.log("Greatest Increase in Profits: " + greatestIncreaseMonth + " " + "(" + greatestIncrease + ")")
 // date/amount of greatest loss over entire period
-console.log("Greatest Decrease in Profits: " + greatestDecrease)
+console.log("Greatest Decrease in Profits: " + "(" + greatestDecrease + ")")
