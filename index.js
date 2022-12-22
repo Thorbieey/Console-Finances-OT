@@ -123,7 +123,7 @@ let greatestDecreaseMonth = finances[greatestDecreaseIndex][0]; // returns month
 // Print to Console
     // Heading
 console.log("Financial Analysis");
-console.log("-----------------");
+console.log("-------------------------------");
 
     // total number of months included in the finances dataset.
 console.log( "Total Months: " + totalMonths);
