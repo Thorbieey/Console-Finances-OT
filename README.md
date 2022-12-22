@@ -5,9 +5,9 @@
 ### User Story
 
 ```
-AS A company correctly analysing my finances is important in evaluating my company's econnomic trends
+AS A company correctly analysing my finances is important in evaluating my company's economic trends
 I WANT a code that analyzes my company's financial records
-SO THAT i can easily view and access data concerning our financial performance over a period.
+SO THAT i can easily view and access data concerning our financial performance over a given period.
 ```
 
 ### Acceptance Criteria
@@ -21,7 +21,7 @@ SO THAT i can easily view and access data concerning our financial performance o
 
 * The JavaScript code must calculate the average of the changes in Profit/Losses over the entire period.
 
-* The code must also track the total changes in profits from month to month and then find the average.
+* The code must also track the total changes in profits from month to month and before finding the average.
 
 * The JavaScript code must calculate the greatest increase in profits (date and amount) over the entire period.
 
@@ -52,7 +52,7 @@ SO THAT i can easily view and access data concerning our financial performance o
 
 ## Credits
 
-* [Format number using fixed-point notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+* [Format numbers using fixed-point notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
 * [Meet array prototype: **push()**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push#:~:text=The%20push()%20method%20adds,new%20length%20of%20the%20array.)
 * [Meet array prototype: **indexOf()**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 * [Learn about selecting values in an array - part 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
